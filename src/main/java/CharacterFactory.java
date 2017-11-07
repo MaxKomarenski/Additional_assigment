@@ -11,7 +11,7 @@ public class CharacterFactory {
 
     public Character randomCharacter(){
         Random character = new Random();
-        int characterRandom = character.nextInt((list.size() - 1) - 0 + 1);
+        int characterRandom = character.nextInt((list.size() - 1) + 1);
         return list.get(characterRandom);
     }
 

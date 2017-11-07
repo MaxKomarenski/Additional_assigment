@@ -1,6 +1,8 @@
 public class Elf extends Character {
-    protected int hp = 10;
-    protected  int power = 10;
+    public Elf(){
+        hp = 10;
+        power =10;
+    }
 
     public void kick(Character c) {
         if(c.power <= this.power){

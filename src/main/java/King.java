@@ -8,11 +8,9 @@ public class King extends Character{
     public King() {
         hp  = rand.nextInt(powerAndHpMax - powerAndHpMin + 1) + powerAndHpMin;
         power = rand.nextInt(powerAndHpMax - powerAndHpMin + 1) + powerAndHpMin;
-
     }
 
-    public void kick(Character c){
-
+    protected void kick(Character c){
         c.hp -= rand.nextInt(power + 1);
     }
 }

@@ -4,22 +4,34 @@ import java.util.Random;
 
 public class CharacterFactory {
     public CharacterFactory() {
-        addtoList();
+        addToList();
     }
 
-    List<Character> list = new ArrayList<>();
+    List<Character> listCharacters = new ArrayList<>();
+    List<Weapon> listWeapons = new ArrayList<>();
 
-    public Character randomCharacter(){
+    protected Character randomCharacter(){
         Random character = new Random();
-        int characterRandom = character.nextInt((list.size() - 1) + 1);
-        return list.get(characterRandom);
+        int characterRandom = character.nextInt((listCharacters.size() - 1) + 1);
+        return listCharacters.get(characterRandom);
     }
 
-    private void  addtoList(){
-        list.add(new Hobbit());
-        list.add(new Elf());
-        list.add(new Knight());
-        list.add(new King());
+    protected Weapon randomWeapon(){
+        Random weapon = new Random();
+        int weaponRandom = weapon.nextInt((listWeapons.size() - 1) + 1);
+        return listWeapons.get(weaponRandom);
+    }
+
+    private void addToList(){
+        listCharacters.add(new Hobbit());
+        listCharacters.add(new Elf());
+        listCharacters.add(new Knight());
+        listCharacters.add(new King());
+
+        listWeapons.add(new Sword());
+        listWeapons.add(new BowoftheGaladhrim());
+        listWeapons.add(new GandalfsStaffs());
+        listWeapons.add(new TheRingOfPower());
     }
 
 

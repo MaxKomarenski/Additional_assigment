@@ -4,7 +4,7 @@ public class Hobbit extends Character{
         hp = 3;
     }
 
-    public void kick(Character c){
+    protected void kick(Character c){
         toCry();
     }
 

@@ -1,6 +1,6 @@
 public class BowoftheGaladhrim extends Weapon{
     public BowoftheGaladhrim(){
-        powerOfWeapon = 10;
+        powerOfWeapon = 5;
         strength = 5;
     }
 

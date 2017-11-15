@@ -1,6 +1,6 @@
 public class GandalfsStaffs extends Weapon {
     public GandalfsStaffs(){
-        powerOfWeapon = 13;
+        powerOfWeapon = 9;
         strength = 6;
     }
 

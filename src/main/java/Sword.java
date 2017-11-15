@@ -4,7 +4,7 @@ public class Sword extends Weapon {
         strength = 2;
     }
 
-    @Override
+
     protected void takingOfTheWeapon(Character a) {
         if(isUnBroken()){
             a.power += powerOfWeapon;

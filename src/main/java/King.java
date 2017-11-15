@@ -1,13 +1,16 @@
 import java.util.Random;
 
 public class King extends Character{
-    private static int powerAndHpMax = 15;
-    private static int powerAndHpMin = 5;
-    Random rand = new Random();
+    private Random rand = new Random();
 
     public King() {
-        hp  = rand.nextInt(powerAndHpMax - powerAndHpMin + 1) + powerAndHpMin;
-        power = rand.nextInt(powerAndHpMax - powerAndHpMin + 1) + powerAndHpMin;
+        int hpMax = 100;
+        int hpMin = 50;
+        int powerMin = 10;
+        int powerMax = 30;
+
+        hp  = rand.nextInt(hpMax - hpMin + 1) + hpMin;
+        power = rand.nextInt(powerMax - powerMin + 1) + powerMin;
     }
 
     protected void kick(Character c){

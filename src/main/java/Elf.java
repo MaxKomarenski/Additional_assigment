@@ -1,7 +1,8 @@
-public class Elf extends Character {
+public class Elf extends Character{
+
     public Elf(){
-        hp = 10;
-        power =10;
+        hp = 50;
+        power = 15;
     }
 
     protected void kick(Character c) {

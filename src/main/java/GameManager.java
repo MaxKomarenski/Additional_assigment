@@ -1,18 +1,13 @@
 import java.util.Objects;
 
 public class GameManager extends CharacterFactory {
-    private static CharacterFactory randomWarriorAndWeapon = new CharacterFactory();
-    private static Character warrior1 = randomWarriorAndWeapon.randomCharacter();
-    private static Character warrior2 = randomWarriorAndWeapon.randomCharacter();
-    private static Weapon weapon1 = randomWarriorAndWeapon.randomWeapon();
-    private static Weapon weapon2 = randomWarriorAndWeapon.randomWeapon();
 
     private static void showWarriorsAndWeapons(Character wa1, Character wa2, Weapon we1, Weapon we2){
         System.out.println(wa1.getClass().getSimpleName()+"(HP:"+ wa1.hp  +". Power:" + wa1.power + ")"
-                + " with " + we1.getClass().getSimpleName() + "(PowOfWeapon:" + we1.powerOfWeapon + ", Stren:"
+                + " with " + we1.getClass().getSimpleName() + "(PowerOfWeapon:" + we1.powerOfWeapon + ", Strenth:"
                 + we1.strength + ")"
                 + " kicks " + wa2.getClass().getSimpleName()+"(HP:"+ wa2.hp  +". Power:" + wa2.power + ")"
-                + " with " + we2.getClass().getSimpleName() + "(PowOfWeapon:" + we2.powerOfWeapon + ", Stren:"
+                + " with " + we2.getClass().getSimpleName() + "(PowerOfWeapon:" + we2.powerOfWeapon + ", Strenth:"
                 + we1.strength + ")");
     }
 
@@ -21,7 +16,8 @@ public class GameManager extends CharacterFactory {
                 + wa1.getClass().getSimpleName() + " is the winner.");
     }
 
-    public static void main(String[] args){
+
+    protected void fight(Character warrior1, Character warrior2, Weapon weapon1, Weapon weapon2){
         while (true) {
             if (Objects.equals(warrior1.getClass().getSimpleName(), "Elf") && Objects.equals(warrior2.getClass().getSimpleName(), "Elf")
                     || Objects.equals(warrior1.getClass().getSimpleName(), "Hobbit") && Objects.equals(warrior2.getClass().getSimpleName(), "Hobbit")){
@@ -51,5 +47,5 @@ public class GameManager extends CharacterFactory {
         }
 
     }
-
 }
+

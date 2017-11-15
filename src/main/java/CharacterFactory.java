@@ -7,8 +7,8 @@ public class CharacterFactory {
         addToList();
     }
 
-    List<Character> listCharacters = new ArrayList<>();
-    List<Weapon> listWeapons = new ArrayList<>();
+    private List<Character> listCharacters = new ArrayList<>();
+    private List<Weapon> listWeapons = new ArrayList<>();
 
     protected Character randomCharacter(){
         Random character = new Random();

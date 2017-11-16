@@ -1,0 +1,38 @@
+package Characters;
+
+public abstract class Character {
+    protected int hp;
+    protected int power;
+    protected String nameOfWeapon;
+
+    public abstract void kick(Character c);
+    public boolean isAlive(){
+        return hp > 0;
+
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
+    }
+
+    public String getNameOfWeapon() {
+        return nameOfWeapon;
+    }
+
+    public void setNameOfWeapon(String nameOfWeapon) {
+        this.nameOfWeapon = nameOfWeapon;
+    }
+}
+

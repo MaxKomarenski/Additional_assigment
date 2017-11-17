@@ -1,6 +1,5 @@
 package Characters;
 
-import Characters.Character;
 import Weapon.WeaponBehaviour;
 import Weapon.WeaponFactory;
 
